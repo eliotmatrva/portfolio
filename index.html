@@ -1,25 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>ME's Portfolio</title>
-    
-</head>
-<body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<div class="container">
-  <div class = "myNav">
-    <div class = "navButton"> <img id="mainLogo" src="Assets and Resources/logo_redux.png"></div>
-    <div class = "navButton" id = "homeLink"> HOME </div>
-    <div class = "navButton" id = "projectsLink"><a href="www.bing.com">PROJECTS</a></div>
-  </div>
-  <div class = "myHeader"><h1>Matt Elliott - Portfolio Website</h1></div>
-  <div class = "myBody">
-    <div class = "bioContainer">
-      <div id = "bioSkills" class = "bioBox">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>ME's Portfolio</title>
+  </head>
+  <body>
+    <!-- Just an image -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="Assets and Resources/logo_redux.png" width="60" height="60" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">PROJECTS</a>
+        </div>
+      </div>
+    </nav>
+    <h1>Matt Elliott - Portfolio Website</h1>
+  <div class = "container">
+    <div id = "myPhoto" class = "bioBox"></div>
+    <div id = "bioSkills" class = "bioBox">
           <ul><h2>Technical Skills</h2>
             <li>SQL (data imports, queries, migrataions)</li>
             <li>Data Modelling</li>
@@ -31,8 +43,8 @@
             <li>Prototyping</li>
             <li>Flowcharts</li>
           </ul>
-      </div>
-      <div id = "bioAbout" class = "bioBox">
+    </div>
+    <div id = "bioAbout" class = "bioBox">
         <h2>Bio</h2>
         <p>A chief product officer and full-stack web development student building exciting regulatory technology ("REGTECH") solutions for financial institutions.
           <br><br>As a kid I built PCs, tinkered with hardware and device settings, and built amateur websites.  I have always had a curiosity about using technology to do things a bit differently.
@@ -48,12 +60,10 @@
         </ul>
       </div>
       <div id = "bioVideo" class = "bioBox">
-        <h2>Video</h2>
-      </div> 
-    </div>
-  <div class = "myFooter">
+        <iframe id="videoPlayer" width="350" height="350" src="https://www.youtube.com/embed/221haWfyRqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+      </div>
+  <div id = "myFooter" class = "bioBox">
     This website and its contents are property of Matt Elliott - 2021
-    <p id = "color legend">blue = rgb(20, 100, 246) | green = rgb(114 187 83) | orange = rgb(255 102 36) </p>
   </div>     
 </div>
           
@@ -86,6 +96,11 @@
     </div>
   -->
 </div>
-<script src="scripts.js"></script>
-</body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
