@@ -95,7 +95,7 @@ p {
     padding: 1em;
     box-shadow: 3px 3px #888888;
     display: grid;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-rows: auto auto 150px;
 }
 
 .imgContainer {
